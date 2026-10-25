@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b10">
+  <meta name="description" content="Weiz Stock - Discover our featured digital products.">
+  <title>Weiz Stock — Premium Digital Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">
+    <span>✦</span> PREMIUM QUALITY · NEW PRODUCTS IN STOCK
+    <span>✦</span>
+  </div>
+
+  <header class="navbar">
+    <a href="#" class="logo"><span class="logo-mark">W</span> WEIZ<span class="muted">STOCK</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#features">Why Us</a>
+      <a href="#social">Community</a>
+    </nav>
+    <button class="cart-button" id="cartButton">Cart <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="live-dot"></span> YOUR DIGITAL DESTINATION</div>
+        <h1>QUALITY THAT<br>SETS YOU <span>APART.</span></h1>
+        <p>Discover our collection of digital products.
+           Simple shopping, transparent pricing, and a better experience.</p>
+        <div class="hero-actions">
+          <a href="#products" class="button primary">Explore Products ↗</a>
+          <a href="#features" class="button secondary">Learn More</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>01</strong><span>Curated Collection</span></div>
+          <div><strong>24/7</strong><span>Online Access</span></div>
+          <div><strong>100%</strong><span>Digital Experience</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Ilustrasi produk digital">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="hero-card">
+          <div class="hero-card-top"><span>WEIZ / DIGITAL</span><span>✦</span></div>
+          <div class="hero-symbol">W<span>.</span></div>
+          <div class="hero-card-bottom"><span>PREMIUM COLLECTION</span><span>2026</span></div>
+        </div>
+        <div class="floating-tag tag-top">✦ PREMIUM QUALITY</div>
+        <div class="floating-tag tag-bottom">● AVAILABLE ONLINE</div>
+      </div>
+    </section>
+
+    <div class="ticker">
+      <div>WEIZ ON FIRE ✦ PREMIUM DIGITAL ✦ QUALITY FIRST ✦ SHOP SMART ✦ WEIZ ON FIRE ✦ PREMIUM DIGITAL ✦ QUALITY FIRST ✦</div>
+    </div>
+
+    <section class="products section" id="products">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">THE COLLECTION / 01</div>
+          <h2>Featured <span>Products.</span></h2>
+          <p>Explore our selection and find what works for you.</p>
+        </div>
+        <span class="product-total" id="productTotal">06 PRODUCTS</span>
+      </div>
+
+      <div class="toolbar">
+        <label class="search-box">
+          <span>⌕</span>
+          <input id="searchInput" type="search" placeholder="Search products..." aria-label="Cari produk">
+        </label>
+        <select id="sortSelect" aria-label="Urutkan produk">
+          <option value="featured">Featured</option>
+          <option value="low">Price: Low to High</option>
+          <option value="high">Price: High to Low</option>
+          <option value="name">Name: A to Z</option>
+        </select>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>No products found. Try another search.</p>
+    </section>
+
+    <section class="feature-banner" id="features">
+      <div class="feature-copy">
+        <div class="eyebrow">THE WEIZ STANDARD / 02</div>
+        <h2>Less hassle.<br><span>More value.</span></h2>
+        <p>We believe shopping for digital products should be clear, simple, and convenient from start to finish.</p>
+        <a href="#products" class="button primary">Browse Collection ↗</a>
+      </div>
+      <div class="feature-list">
+        <article class="feature-item">
+          <span class="feature-icon">✳</span>
+          <div><h3>Curated Selection</h3><p>Products presented with clear descriptions and pricing.</p></div>
+          <span class="feature-number">01</span>
+        </article>
+        <article class="feature-item">
+          <span class="feature-icon">◇</span>
+          <div><h3>Simple Experience</h3><p>Browse, search, and compare products with ease.</p></div>
+          <span class="feature-number">02</span>
+        </article>
+        <article class="feature-item">
+          <span class="feature-icon">↗</span>
+          <div><h3>Community First</h3><p>Find updates and support through our official channels.</p></div>
+          <span class="feature-number">03</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="community section" id="social">
+      <div class="community-icon">✦</div>
+      <div>
+        <div class="eyebrow">STAY CONNECTED / 03</div>
+        <h2>Join the <span>community.</span></h2>
+        <p>Follow our channels for product news and announcements.</p>
+      </div>
+      <a class="button secondary" href="https://t.me/" target="_blank" rel="noopener noreferrer">Visit Telegram ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#home" class="logo"><span class="logo-mark">W</span> WEIZ<span class="muted">STOCK</span></a>
+    <p>Digital products. A better experience.</p>
+    <span>© <span id="year"></span> Weiz Stock. All rights reserved.</span>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
